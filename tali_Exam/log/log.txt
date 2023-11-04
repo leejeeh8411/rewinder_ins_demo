@@ -1,0 +1,553 @@
+[2023-10-29 17:18:30.187] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-29 17:18:34.958] [main] [trace] [tali_examdlg.cpp:172] Program End
+[2023-10-29 17:18:34.979] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-29 17:19:29.770] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-29 17:19:31.793] [main] [trace] [tali_examdlg.cpp:172] Program End
+[2023-10-29 17:19:31.808] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-29 17:20:34.668] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-29 17:20:36.522] [main] [trace] [tali_examdlg.cpp:172] Program End
+[2023-10-29 17:20:36.542] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-29 17:20:56.143] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-29 17:20:57.574] [main] [trace] [tali_examdlg.cpp:172] Program End
+[2023-10-29 17:20:57.588] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-29 17:21:29.425] [main] [trace] [tali_examdlg.cpp:200] Program Start
+[2023-10-29 17:21:49.386] [main] [trace] [tali_examdlg.cpp:173] Program End
+[2023-10-29 17:21:49.408] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-29 17:22:35.073] [main] [trace] [tali_examdlg.cpp:200] Program Start
+[2023-10-29 17:24:50.530] [main] [trace] [tali_examdlg.cpp:200] Program Start
+[2023-10-29 17:25:04.490] [main] [trace] [tali_examdlg.cpp:173] Program End
+[2023-10-29 17:25:04.507] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-29 17:25:12.980] [main] [trace] [tali_examdlg.cpp:200] Program Start
+[2023-10-29 17:25:45.855] [main] [trace] [tali_examdlg.cpp:200] Program Start
+[2023-10-29 17:25:47.529] [main] [trace] [tali_examdlg.cpp:173] Program End
+[2023-10-29 17:25:47.548] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-29 17:29:51.706] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-29 17:29:52.649] [main] [info] [tali_examdlg.cpp:224] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:43:44.598] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-29 17:44:43.639] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-29 17:44:44.984] [main] [info] [tali_examdlg.cpp:240] -145650
+[2023-10-29 17:44:44.986] [main] [info] [tali_examdlg.cpp:243] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:44:48.098] [main] [info] [tali_examdlg.cpp:240] -56937
+[2023-10-29 17:44:48.099] [main] [info] [tali_examdlg.cpp:243] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:46:33.663] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-29 17:46:36.455] [main] [info] [tali_examdlg.cpp:242] min :-56937, index: 520
+[2023-10-29 17:46:36.456] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:46:41.401] [main] [info] [tali_examdlg.cpp:242] min :-44701, index: 526
+[2023-10-29 17:46:41.402] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:46:43.178] [main] [info] [tali_examdlg.cpp:242] min :-30148, index: 438
+[2023-10-29 17:46:43.179] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:47:07.140] [main] [info] [tali_examdlg.cpp:242] min :-2394, index: 23
+[2023-10-29 17:47:07.141] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:04.755] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-29 17:48:07.707] [main] [info] [tali_examdlg.cpp:242] min :-43487, index: 517
+[2023-10-29 17:48:07.708] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:09.894] [main] [info] [tali_examdlg.cpp:242] min :-36329, index: 827
+[2023-10-29 17:48:09.895] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:11.427] [main] [info] [tali_examdlg.cpp:242] min :-28108, index: 886
+[2023-10-29 17:48:11.429] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:20.589] [main] [info] [tali_examdlg.cpp:242] min :-28108, index: 886
+[2023-10-29 17:48:20.592] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:22.355] [main] [info] [tali_examdlg.cpp:242] min :-43487, index: 517
+[2023-10-29 17:48:22.358] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:24.268] [main] [info] [tali_examdlg.cpp:242] min :-36329, index: 827
+[2023-10-29 17:48:24.269] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:27.944] [main] [info] [tali_examdlg.cpp:242] min :-44941, index: 821
+[2023-10-29 17:48:27.945] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:29.828] [main] [info] [tali_examdlg.cpp:242] min :-5939, index: 472
+[2023-10-29 17:48:29.829] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:34.239] [main] [info] [tali_examdlg.cpp:242] min :-22672, index: 606
+[2023-10-29 17:48:34.240] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:36.886] [main] [info] [tali_examdlg.cpp:242] min :-48686, index: 615
+[2023-10-29 17:48:36.887] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:38.562] [main] [info] [tali_examdlg.cpp:242] min :-54293, index: 524
+[2023-10-29 17:48:38.563] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:40.370] [main] [info] [tali_examdlg.cpp:242] min :-48686, index: 615
+[2023-10-29 17:48:40.371] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:45.030] [main] [info] [tali_examdlg.cpp:242] min :-28108, index: 886
+[2023-10-29 17:48:45.033] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:48:53.856] [main] [info] [tali_examdlg.cpp:242] min :-28108, index: 886
+[2023-10-29 17:48:53.857] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:49:03.851] [main] [info] [tali_examdlg.cpp:242] min :-44481, index: 582
+[2023-10-29 17:49:03.852] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:49:07.563] [main] [info] [tali_examdlg.cpp:242] min :-63051, index: 510
+[2023-10-29 17:49:07.564] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:49:18.840] [main] [info] [tali_examdlg.cpp:242] min :-44481, index: 582
+[2023-10-29 17:49:18.841] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:49:24.318] [main] [info] [tali_examdlg.cpp:242] min :-70777, index: 541
+[2023-10-29 17:49:24.319] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:49:26.005] [main] [info] [tali_examdlg.cpp:242] min :-65601, index: 542
+[2023-10-29 17:49:26.006] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:49:28.098] [main] [info] [tali_examdlg.cpp:242] min :-54720, index: 546
+[2023-10-29 17:49:28.099] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:49:31.560] [main] [info] [tali_examdlg.cpp:242] min :-10345, index: 521
+[2023-10-29 17:49:31.562] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:49:33.968] [main] [trace] [tali_examdlg.cpp:171] Program End
+[2023-10-29 17:49:33.992] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-29 17:50:02.750] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-29 17:50:03.487] [main] [info] [tali_examdlg.cpp:242] min :-145650, index: 512
+[2023-10-29 17:50:03.488] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:50:05.726] [main] [info] [tali_examdlg.cpp:242] min :-70777, index: 541
+[2023-10-29 17:50:05.728] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:50:07.661] [main] [info] [tali_examdlg.cpp:242] min :-51419, index: 543
+[2023-10-29 17:50:07.663] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:50:09.274] [main] [info] [tali_examdlg.cpp:242] min :-91315, index: 545
+[2023-10-29 17:50:09.276] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:50:10.688] [main] [info] [tali_examdlg.cpp:242] min :-54720, index: 546
+[2023-10-29 17:50:10.690] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:50:15.325] [main] [info] [tali_examdlg.cpp:242] min :-41352, index: 553
+[2023-10-29 17:50:15.326] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:50:22.175] [main] [info] [tali_examdlg.cpp:242] min :-22672, index: 606
+[2023-10-29 17:50:22.176] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:50:30.038] [main] [info] [tali_examdlg.cpp:242] min :-37795, index: 608
+[2023-10-29 17:50:30.040] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:50:34.113] [main] [info] [tali_examdlg.cpp:242] min :-43487, index: 517
+[2023-10-29 17:50:34.114] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:50:36.523] [main] [info] [tali_examdlg.cpp:242] min :-28108, index: 886
+[2023-10-29 17:50:36.525] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-29 17:51:15.684] [main] [trace] [tali_examdlg.cpp:171] Program End
+[2023-10-29 17:51:15.709] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 08:52:24.552] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 08:52:25.477] [main] [info] [tali_examdlg.cpp:242] min :-145650, index: 512
+[2023-10-30 08:52:25.479] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 0, top 0, right 0, bottom 0
+[2023-10-30 08:55:18.273] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 08:55:21.736] [main] [info] [tali_examdlg.cpp:242] min :-22672, index: 606
+[2023-10-30 08:55:21.738] [main] [info] [tali_examdlg.cpp:247] Get Edge = Roi[left 606, top 0, right 606, bottom 1200
+[2023-10-30 08:55:22.902] [main] [trace] [tali_examdlg.cpp:171] Program End
+[2023-10-30 08:55:22.926] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 08:55:32.189] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 08:55:34.542] [main] [info] [tali_examdlg.cpp:242] min :-22672, index: 606
+[2023-10-30 08:55:34.544] [main] [info] [tali_examdlg.cpp:247] Get Edge = Roi[left 606, top 0, right 606, bottom 1200
+[2023-10-30 08:56:03.716] [main] [trace] [tali_examdlg.cpp:171] Program End
+[2023-10-30 08:56:03.755] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 08:56:55.328] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 08:56:58.051] [main] [info] [tali_examdlg.cpp:242] min :-22672, index: 606
+[2023-10-30 08:56:58.052] [main] [info] [tali_examdlg.cpp:247] Get Edge = Roi[left 506, top 0, right 606, bottom 1200
+[2023-10-30 08:56:59.840] [main] [trace] [tali_examdlg.cpp:171] Program End
+[2023-10-30 08:56:59.869] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 08:57:21.193] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 08:57:23.169] [main] [info] [tali_examdlg.cpp:242] min :-22672, index: 606
+[2023-10-30 08:57:23.171] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 506, top 0, right 606, bottom 1200
+[2023-10-30 08:57:51.720] [main] [info] [tali_examdlg.cpp:242] min :-54720, index: 546
+[2023-10-30 08:57:51.722] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 446, top 0, right 546, bottom 1200
+[2023-10-30 08:58:31.645] [main] [trace] [tali_examdlg.cpp:171] Program End
+[2023-10-30 08:58:31.695] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:01:53.028] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 09:01:56.584] [main] [info] [tali_examdlg.cpp:242] min :-65601, index: 542
+[2023-10-30 09:01:56.586] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 422, top 0, right 542, bottom 1200
+[2023-10-30 09:05:52.320] [main] [info] [tali_examdlg.cpp:242] min :-70777, index: 541
+[2023-10-30 09:05:52.321] [main] [info] [tali_examdlg.cpp:248] Get Edge = Roi[left 421, top 0, right 541, bottom 1200
+[2023-10-30 09:09:05.258] [main] [trace] [tali_examdlg.cpp:171] Program End
+[2023-10-30 09:09:05.325] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:12:18.704] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 09:13:51.675] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 09:15:22.785] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 09:15:41.006] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 09:18:17.012] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:18:18.923] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:18:26.466] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:18:29.283] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:18:35.860] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:18:38.344] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:18:42.726] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:18:47.344] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:22:01.827] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:24:19.341] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:29:31.142] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:29:38.961] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:30:04.354] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:30:45.247] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:54:58.354] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:55:08.156] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:55:46.059] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:56:39.350] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 09:58:34.425] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 09:59:16.720] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 10:00:27.986] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:00:36.334] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 10:02:23.018] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:02:38.094] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:04:02.739] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 10:04:35.425] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:05:35.031] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:06:01.979] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:19:43.729] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:20:20.371] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 10:20:39.632] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:30:24.681] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 10:32:35.503] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:34:13.039] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 10:36:15.576] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:36:19.054] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 10:37:09.928] [main] [trace] [tali_examdlg.cpp:197] Program Start
+[2023-10-30 10:39:45.318] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 11:20:53.706] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 11:24:48.839] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 11:26:55.408] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 11:41:12.509] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 11:42:00.075] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 14:21:56.210] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 14:22:03.064] [main] [info] [tali_examdlg.cpp:266] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-30 14:22:06.162] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 14:44:12.090] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 14:48:32.159] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 14:48:49.263] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 16:08:02.830] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:35:02.396] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:35:12.805] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:37:01.875] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:39:09.677] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:40:20.344] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:40:39.543] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:41:49.654] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:41:50.865] [main] [info] [tali_examdlg.cpp:266] get edge = roi[left 391, top 0, right 511, bottom 1200
+[2023-10-30 16:43:33.709] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:43:34.994] [main] [info] [tali_examdlg.cpp:266] get edge = roi[left 391, top 0, right 511, bottom 1200
+[2023-10-30 16:48:18.237] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:49:38.494] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 16:51:36.645] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:02:30.741] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:02:47.903] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:04:06.940] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:04:18.077] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 17:04:26.659] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:05:40.888] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:06:22.711] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:06:36.759] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:07:06.912] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:07:26.996] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:07:44.677] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:07:50.638] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 17:08:59.919] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:09:19.336] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:09:28.776] [main] [info] [tali_examdlg.cpp:266] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-30 17:09:37.347] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:28:35.427] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:28:56.788] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:29:02.192] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 17:29:05.000] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:29:09.160] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:29:50.905] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 17:32:40.397] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:33:55.994] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:34:03.635] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:35:46.623] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:37:06.779] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:40:11.577] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:41:12.680] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:41:25.247] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 17:50:49.957] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:51:15.132] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 17:51:55.482] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:58:50.809] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:59:15.569] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 17:59:20.295] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 17:59:38.781] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 18:00:08.023] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 18:00:17.930] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-30 18:00:53.225] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-30 18:01:38.066] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 08:50:16.395] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 08:50:20.792] [main] [info] [tali_examdlg.cpp:266] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 08:50:24.958] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 08:52:09.978] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 08:53:12.999] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 08:53:14.070] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 08:53:21.398] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 08:53:59.446] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 08:55:52.345] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:02:13.632] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:02:18.689] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:04:56.976] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:06:31.347] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:06:53.223] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:07:21.303] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:08:06.852] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:08:07.612] [main] [info] [tali_examdlg.cpp:266] get edge = roi[left 391, top 0, right 511, bottom 1200
+[2023-10-31 09:08:11.776] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:08:59.155] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:09:28.079] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:09:50.228] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:09:57.080] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:10:48.725] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:13:20.711] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:14:16.888] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:14:35.456] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:16:25.172] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:17:05.269] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:17:24.359] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:18:19.610] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:18:23.026] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:18:45.905] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:21:23.264] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:26:25.356] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:26:30.344] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:26:38.080] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:28:25.290] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:29:25.109] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:31:12.298] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:33:52.924] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:34:09.818] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:34:52.423] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:36:11.067] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:40:52.945] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:43:59.346] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:44:53.425] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:45:37.568] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:49:29.477] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:49:56.878] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:50:26.963] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:50:41.095] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:50:57.102] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:51:35.702] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:51:54.175] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:52:29.167] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 09:52:46.158] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:52:52.444] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:53:11.420] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:53:26.153] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:54:09.385] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 09:56:25.113] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:03:28.916] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:04:31.034] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:05:12.107] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:05:33.114] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:05:53.823] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:06:22.088] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:06:32.471] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:06:51.153] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:07:05.701] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:07:35.888] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:07:51.894] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:09:16.709] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:10:51.932] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:13:58.291] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:14:06.214] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:14:18.880] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:14:39.088] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:15:35.277] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:17:35.962] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:28:12.189] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:28:44.576] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 10:41:07.202] [main] [trace] [tali_examdlg.cpp:198] Program Start
+[2023-10-31 10:53:20.143] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 10:57:43.720] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 10:57:51.124] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 10:59:21.736] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:04:36.456] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:08:56.868] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:10:43.749] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:11:08.930] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:11:12.690] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 11:12:16.547] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:12:22.982] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 11:13:06.231] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:13:16.111] [main] [info] [tali_examdlg.cpp:267] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 11:13:21.479] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 11:13:50.234] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:13:56.525] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 11:14:50.513] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:15:56.727] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:16:29.117] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:17:28.005] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:17:55.123] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:19:57.434] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:20:00.912] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 11:20:09.462] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:20:28.328] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:21:14.615] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:21:15.537] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 11:21:21.812] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:23:57.880] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 11:33:30.542] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:33:44.987] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:35:40.531] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 11:37:48.235] [main] [trace] [tali_examdlg.cpp:199] Program Start
+[2023-10-31 13:04:26.209] [main] [trace] [tali_examdlg.cpp:205] Program Start
+[2023-10-31 13:04:28.464] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:05:12.723] [main] [trace] [tali_examdlg.cpp:205] Program Start
+[2023-10-31 13:05:15.024] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:09:58.394] [main] [trace] [tali_examdlg.cpp:205] Program Start
+[2023-10-31 13:10:16.477] [main] [trace] [tali_examdlg.cpp:205] Program Start
+[2023-10-31 13:12:12.423] [main] [trace] [tali_examdlg.cpp:205] Program Start
+[2023-10-31 13:12:29.686] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:19:08.441] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:19:12.040] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:26:21.665] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:26:32.932] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:26:42.181] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:26:51.159] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:27:52.813] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:28:17.452] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:28:55.882] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:34:44.782] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:36:05.419] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:36:42.056] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:37:45.243] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:37:58.633] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:38:00.807] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:38:22.776] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:38:38.754] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:39:10.430] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:39:22.659] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:39:41.366] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:43:33.306] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:43:56.525] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:44:09.862] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:44:27.812] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:44:47.001] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:44:57.964] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:45:04.377] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:46:53.279] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:47:23.525] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:47:36.102] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:48:02.758] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:49:12.139] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:50:27.592] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:51:46.859] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:51:58.982] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:52:11.503] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:52:32.885] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:53:35.825] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:53:44.263] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:55:21.355] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:55:51.485] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:56:56.777] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 13:58:33.049] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:59:26.836] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 13:59:56.081] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:00:12.881] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:00:45.634] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:01:15.564] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:04:04.094] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:05:11.189] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:12:28.550] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:14:17.998] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:14:19.514] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:12:58.508] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:14:22.537] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:14:24.420] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:17:52.142] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:18:53.445] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:27:25.244] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:27:28.101] [main] [info] [tali_examdlg.cpp:274] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 14:27:30.085] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:30:59.743] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:31:16.832] [main] [info] [tali_examdlg.cpp:275] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 14:31:44.175] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:31:50.210] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:32:24.705] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:39:52.270] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:40:05.848] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:40:16.351] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:40:32.174] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:40:38.185] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:41:03.599] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:42:47.751] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:44:46.769] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:44:52.423] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:47:48.128] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:48:02.231] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:50:39.343] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:50:56.130] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:51:43.747] [main] [info] [tali_examdlg.cpp:275] get edge = roi[left 344, top 0, right 464, bottom 1200
+[2023-10-31 14:53:21.722] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:53:33.856] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:56:04.944] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:56:48.367] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:57:05.916] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 14:57:25.251] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 14:57:31.729] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:02:53.429] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:03:05.111] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:03:52.848] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:03:56.618] [main] [info] [tali_examdlg.cpp:275] get edge = roi[left 343, top 0, right 463, bottom 1200
+[2023-10-31 15:05:37.086] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:07:34.772] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:07:44.254] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:13:53.629] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:15:12.402] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:15:58.175] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:16:56.997] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:17:00.670] [main] [info] [tali_examdlg.cpp:273] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 15:17:32.842] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:20:58.135] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:24:04.066] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:25:13.317] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:25:22.952] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:26:45.582] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:26:52.395] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:27:04.047] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:27:48.964] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:27:59.660] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:29:00.257] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:29:13.558] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:29:30.966] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:29:45.839] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:32:18.307] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:33:02.777] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:33:12.399] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:37:55.353] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:39:47.240] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:41:24.050] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:41:37.731] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:42:59.979] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:43:37.054] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:53:15.832] [main] [trace] [tali_examdlg.cpp:206] Program Start
+[2023-10-31 15:53:18.618] [main] [info] [tali_examdlg.cpp:273] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 15:53:39.275] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 15:56:27.093] [main] [trace] [tali_examdlg.cpp:207] Program Start
+[2023-10-31 15:56:34.663] [main] [info] [tali_examdlg.cpp:274] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 15:58:01.361] [main] [trace] [tali_examdlg.cpp:207] Program Start
+[2023-10-31 15:58:07.724] [main] [info] [tali_examdlg.cpp:274] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 15:58:31.677] [main] [trace] [tali_examdlg.cpp:207] Program Start
+[2023-10-31 15:58:34.458] [main] [info] [tali_examdlg.cpp:274] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 15:58:37.259] [main] [info] [tali_examdlg.cpp:274] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 16:01:03.740] [main] [trace] [tali_examdlg.cpp:207] Program Start
+[2023-10-31 16:01:10.631] [main] [info] [tali_examdlg.cpp:274] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 16:01:21.080] [main] [info] [tali_examdlg.cpp:274] get edge = roi[left 286, top 0, right 406, bottom 1200
+[2023-10-31 16:01:34.964] [main] [info] [tali_examdlg.cpp:274] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 16:02:29.788] [main] [info] [tali_examdlg.cpp:274] get edge = roi[left 345, top 0, right 465, bottom 1200
+[2023-10-31 16:03:03.618] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:03:15.215] [main] [trace] [tali_examdlg.cpp:207] Program Start
+[2023-10-31 16:03:49.647] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:05:34.706] [main] [trace] [tali_examdlg.cpp:207] Program Start
+[2023-10-31 16:05:40.907] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:06:55.750] [main] [trace] [tali_examdlg.cpp:209] Program Start
+[2023-10-31 16:07:20.003] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:10:39.749] [main] [trace] [tali_examdlg.cpp:210] Program Start
+[2023-10-31 16:10:55.226] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:11:52.646] [main] [trace] [tali_examdlg.cpp:210] Program Start
+[2023-10-31 16:12:03.655] [main] [trace] [tali_examdlg.cpp:210] Program Start
+[2023-10-31 16:12:17.076] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:12:35.634] [main] [trace] [tali_examdlg.cpp:210] Program Start
+[2023-10-31 16:12:37.289] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:13:01.953] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:13:04.905] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:13:52.694] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:14:20.346] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:15:21.274] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:16:02.956] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:17:12.261] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:17:22.697] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:20:31.232] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:20:57.426] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:21:33.755] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:22:24.007] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:22:30.362] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:22:39.346] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:23:13.594] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:23:28.481] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:23:52.861] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:24:04.341] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:24:09.853] [main] [info] [tali_examdlg.cpp:278] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 16:24:12.951] [main] [info] [tali_examdlg.cpp:278] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 16:24:24.718] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:26:31.513] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:26:34.782] [main] [info] [tali_examdlg.cpp:278] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 16:27:10.764] [main] [trace] [glogger.cpp:37] logger droped
+[2023-10-31 16:34:01.883] [main] [trace] [tali_examdlg.cpp:211] Program Start
+[2023-10-31 16:34:04.746] [main] [info] [tali_examdlg.cpp:278] get edge = roi[left 340, top 0, right 460, bottom 1200
+[2023-10-31 16:34:54.043] [main] [trace] [glogger.cpp:37] logger droped
+2023-11-01 23:25:57.272	19680	main	info	[main] is created.
+2023-11-02 18:03:12.977	8116	main	info	[main] is created.
+2023-11-02 18:03:14.013	8116	main	warning	[main] is being destoryed...
