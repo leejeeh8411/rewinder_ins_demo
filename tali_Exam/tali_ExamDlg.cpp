@@ -275,15 +275,15 @@ void Ctali_ExamDlg::OnBnClickedBtnLoad()
 {
 	CFileDialog fDlg(true);
 	if (fDlg.DoModal() == IDOK) {
-		m_imgDisplay.gLoad(fDlg.GetPathName());
+		m_imgDisplay_w.gLoad(fDlg.GetPathName());
 	}
 
-	DivideFullImage(m_imgDisplay.gGetImgPtr(),
+	/*DivideFullImage(m_imgDisplay.gGetImgPtr(),
 		m_imgDisplay_w.gGetImgPtr(),
 		m_imgDisplay_b.gGetImgPtr(),
 		m_imgDisplay.gGetWidth(),
 		m_imgDisplay.gGetHeight()
-	);
+	);*/
 
 	bool abnormalTab = false;
 	bool inkMarked = false;
@@ -1376,14 +1376,14 @@ void Ctali_ExamDlg::FolderInspect(CString strPath)
 		CString strFile;
 		strFile.Format(TEXT("%s"), vt_file_list[nCnt].m_strFolderPath);
 		
-		m_imgDisplay.gLoad(strFile);
+		m_imgDisplay_w.gLoad(strFile);
 
-		DivideFullImage(m_imgDisplay.gGetImgPtr(),
+		/*DivideFullImage(m_imgDisplay.gGetImgPtr(),
 			m_imgDisplay_w.gGetImgPtr(),
 			m_imgDisplay_b.gGetImgPtr(),
 			m_imgDisplay.gGetWidth(),
 			m_imgDisplay.gGetHeight()
-		);
+		);*/
 
 		bool abnormalTab = false;
 		bool inkMarked = false;

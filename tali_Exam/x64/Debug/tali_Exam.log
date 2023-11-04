@@ -1,5 +1,4 @@
-﻿  stdafx.cpp
-  tali_ExamDlg.cpp
+﻿  tali_ExamDlg.cpp
 d:\workspace\glib-core-cpp\glib-release\include\glogger.h(21): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
 d:\workspace\glib-core-cpp\glib-release\include\spdlog\fmt\bundled\format-inl.h(1154): warning C4307: '*': 정수 계열 상수 오버플로입니다.
 d:\workspace\glib-core-cpp\glib-release\include\spdlog\fmt\bundled\format-inl.h(1186): warning C4307: '*': 정수 계열 상수 오버플로입니다.
@@ -14,20 +13,20 @@ d:\workspace\rewinder_ins_demo\tali_exam\ini.h(717): warning C4309: 'static_cast
 d:\workspace\rewinder_ins_demo\tali_exam\ini.h(718): warning C4309: 'static_cast': 상수 값이 잘립니다.
 d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(266): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(269): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(358): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(537): warning C4101: 'pixel' :참조되지 않은 지역 변수입니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(754): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(761): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(905): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(926): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(961): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(983): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1129): warning C4805: '==': 연산에 'BOOL' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1062): warning C4101: 'data_int' :참조되지 않은 지역 변수입니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1064): warning C4101: 'data_double' :참조되지 않은 지역 변수입니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1061): warning C4101: 'data_bool' :참조되지 않은 지역 변수입니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1063): warning C4101: 'data_float' :참조되지 않은 지역 변수입니다.
-d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1227): warning C4800: 'VARIANT_BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(361): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(540): warning C4101: 'pixel' :참조되지 않은 지역 변수입니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(757): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(764): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(908): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(929): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(964): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(986): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1135): warning C4805: '==': 연산에 'BOOL' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1068): warning C4101: 'data_int' :참조되지 않은 지역 변수입니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1070): warning C4101: 'data_double' :참조되지 않은 지역 변수입니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1067): warning C4101: 'data_bool' :참조되지 않은 지역 변수입니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1069): warning C4101: 'data_float' :참조되지 않은 지역 변수입니다.
+d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(1233): warning C4800: 'VARIANT_BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
 c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1669): warning C4996: 'std::reverse_copy::_Unchecked_iterators::_Deprecate': Call to 'std::reverse_copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1669): note: 'std::reverse_copy::_Unchecked_iterators::_Deprecate' 선언을 참조하십시오.
   d:\workspace\glib-core-cpp\glib-release\include\spdlog\fmt\bundled\chrono.h(567): note: 컴파일 중인 함수 템플릿 인스턴스화 '_OutIt *std::reverse_copy<char*,char*>(_BidIt,_BidIt,_OutIt)'에 대한 참조를 확인하십시오.
@@ -73,48 +72,17 @@ c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): wa
           [
               _Ty=int
           ]
-  d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(901): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::vector<int,std::allocator<_Ty>>::emplace_back<double>(double &&)'에 대한 참조를 확인하십시오.
+  d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(904): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::vector<int,std::allocator<_Ty>>::emplace_back<double>(double &&)'에 대한 참조를 확인하십시오.
           with
           [
               _Ty=int
           ]
-  d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(901): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::vector<int,std::allocator<_Ty>>::emplace_back<double>(double &&)'에 대한 참조를 확인하십시오.
+  d:\workspace\rewinder_ins_demo\tali_exam\tali_examdlg.cpp(904): note: 컴파일 중인 함수 템플릿 인스턴스화 'void std::vector<int,std::allocator<_Ty>>::emplace_back<double>(double &&)'에 대한 참조를 확인하십시오.
           with
           [
               _Ty=int
           ]
-  tali_Exam.cpp
-d:\workspace\glib-core-cpp\glib-release\include\glogger.h(21): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-d:\workspace\glib-core-cpp\glib-release\include\spdlog\fmt\bundled\format-inl.h(1154): warning C4307: '*': 정수 계열 상수 오버플로입니다.
-d:\workspace\glib-core-cpp\glib-release\include\spdlog\fmt\bundled\format-inl.h(1186): warning C4307: '*': 정수 계열 상수 오버플로입니다.
-d:\workspace\glib-core-cpp\glib-release\include\spdlog\fmt\bundled\format-inl.h(1207): warning C4307: '*': 정수 계열 상수 오버플로입니다.
-d:\workspace\glib-core-cpp\glib-release\include\spdlog\details\circular_q.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-d:\workspace\glib-core-cpp\glib-release\include\spdlog\fmt\bundled\chrono.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(353): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(354): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(355): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(716): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(717): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(718): warning C4309: 'static_cast': 상수 값이 잘립니다.
-c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1669): warning C4996: 'std::reverse_copy::_Unchecked_iterators::_Deprecate': Call to 'std::reverse_copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
-  c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1669): note: 'std::reverse_copy::_Unchecked_iterators::_Deprecate' 선언을 참조하십시오.
-  d:\workspace\glib-core-cpp\glib-release\include\spdlog\fmt\bundled\chrono.h(567): note: 컴파일 중인 함수 템플릿 인스턴스화 '_OutIt *std::reverse_copy<char*,char*>(_BidIt,_BidIt,_OutIt)'에 대한 참조를 확인하십시오.
-          with
-          [
-              _OutIt=char *,
-              _BidIt=char *
-          ]
-  ImageProcess.cpp
-d:\workspace\rewinder_ins_demo\tali_exam\imageprocess.cpp(88): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  gParameter.cpp
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(353): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(354): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(355): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(716): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(717): warning C4309: 'static_cast': 상수 값이 잘립니다.
-d:\workspace\rewinder_ins_demo\tali_exam\ini.h(718): warning C4309: 'static_cast': 상수 값이 잘립니다.
-  Fchain.cpp
-  코드를 생성하고 있습니다...
+  LINK : D:\Workspace\rewinder_ins_demo\tali_Exam\x64\Debug\tali_Exam.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
 tali_Exam.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
 tali_ExamDlg.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
      D:\Workspace\rewinder_ins_demo\tali_Exam\x64\Debug\tali_Exam.lib 라이브러리 및 D:\Workspace\rewinder_ins_demo\tali_Exam\x64\Debug\tali_Exam.exp 개체를 생성하고 있습니다.
