@@ -287,7 +287,9 @@ void Ctali_ExamDlg::OnBnClickedBtnLoad()
 
 	bool abnormalTab = false;
 	bool inkMarked = false;
-	m_searchDefectCnt = Inspect(m_inspect_param, &abnormalTab, &inkMarked);
+	int cntW = 0;
+	int cntB = 0;
+	m_searchDefectCnt = Inspect(m_inspect_param, &abnormalTab, &inkMarked, &cntW, &cntB);
 
 	if (abnormalTab == true) {
 		SetDlgItemTextW(IDC_ABNORMAL_TAB, TEXT("TRUE"));
@@ -303,6 +305,13 @@ void Ctali_ExamDlg::OnBnClickedBtnLoad()
 		SetDlgItemTextW(IDC_INK_MARKED, TEXT("FALSE"));
 	}
 
+	CString strCntW;
+	strCntW.Format(TEXT("%d"), cntW);
+	CString strCntB;
+	strCntB.Format(TEXT("%d"), cntB);
+	SetDlgItemTextW(IDC_TAB_CNT_W, strCntW);
+	SetDlgItemTextW(IDC_TAB_CNT_B, strCntB);
+
 	CString strImgDst;
 	bool bNG = false;
 
@@ -310,8 +319,11 @@ void Ctali_ExamDlg::OnBnClickedBtnLoad()
 		//strImgDst.Format(TEXT("%s\\%s"), strDestPathNG, vt_file_list[nCnt].m_strFileName);
 		bNG = true;
 	}
-	else if (abnormalTab == true || (abnormalTab == false && inkMarked == true)) {//ÅÇºÒ·®:skip or Á¤»óÅÇ and À×Å©¸¶Å·:skip
-		//strImgDst.Format(TEXT("%s\\%s"), strDestPathOK, vt_file_list[nCnt].m_strFileName);
+	//else if (abnormalTab == true || (abnormalTab == false && inkMarked == true)) {//ÅÇºÒ·®:skip or Á¤»óÅÇ and À×Å©¸¶Å·:skip
+	//	//strImgDst.Format(TEXT("%s\\%s"), strDestPathOK, vt_file_list[nCnt].m_strFileName);
+	//	bNG = false;
+	//}
+	else {
 		bNG = false;
 	}
 
@@ -676,7 +688,7 @@ PIXEL_VAL Ctali_ExamDlg::GetFirstLinePixelVal(unsigned char* pSrc, int width, co
 }
 
 
-int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool* bInkMarked)
+int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool* bInkMarked, int* _cntW, int* _cntB)
 {
 	int retDefectCnt = 0;
 
@@ -716,6 +728,9 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 
 	(*bAbNormalTab) = abNormalTab;
 	(*bInkMarked) = inkMarked;
+	(*_cntW) = cntW;
+	(*_cntB) = cntB;
+
 
 	vector<int> vtEdgeCoatTab;
 	vector<int> vtEdgeCoatTrim;
@@ -986,7 +1001,9 @@ void Ctali_ExamDlg::OnBnClickedBtnSearchCoatEdge()
 
 	bool abnormalTab = false;
 	bool inkMarked = false;
-	m_searchDefectCnt = Inspect(m_inspect_param, &abnormalTab, &inkMarked);
+	int cntW = 0;
+	int cntB = 0;
+	m_searchDefectCnt = Inspect(m_inspect_param, &abnormalTab, &inkMarked, &cntW, &cntB);
 
 	if (abnormalTab == true) {
 		SetDlgItemTextW(IDC_ABNORMAL_TAB, TEXT("TRUE"));
@@ -1002,6 +1019,13 @@ void Ctali_ExamDlg::OnBnClickedBtnSearchCoatEdge()
 		SetDlgItemTextW(IDC_INK_MARKED, TEXT("FALSE"));
 	}
 
+	CString strCntW;
+	strCntW.Format(TEXT("%d"), cntW);
+	CString strCntB;
+	strCntB.Format(TEXT("%d"), cntB);
+	SetDlgItemTextW(IDC_TAB_CNT_W, strCntW);
+	SetDlgItemTextW(IDC_TAB_CNT_B, strCntB);
+
 	CString strImgDst;
 	bool bNG = false;
 
@@ -1009,8 +1033,11 @@ void Ctali_ExamDlg::OnBnClickedBtnSearchCoatEdge()
 		//strImgDst.Format(TEXT("%s\\%s"), strDestPathNG, vt_file_list[nCnt].m_strFileName);
 		bNG = true;
 	}
-	else if (abnormalTab == true || (abnormalTab == false && inkMarked == true)) {//ÅÇºÒ·®:skip or Á¤»óÅÇ and À×Å©¸¶Å·:skip
-		//strImgDst.Format(TEXT("%s\\%s"), strDestPathOK, vt_file_list[nCnt].m_strFileName);
+	//else if (abnormalTab == true || (abnormalTab == false && inkMarked == true)) {//ÅÇºÒ·®:skip or Á¤»óÅÇ and À×Å©¸¶Å·:skip
+	//	//strImgDst.Format(TEXT("%s\\%s"), strDestPathOK, vt_file_list[nCnt].m_strFileName);
+	//	bNG = false;
+	//}
+	else {
 		bNG = false;
 	}
 
@@ -1360,7 +1387,9 @@ void Ctali_ExamDlg::FolderInspect(CString strPath)
 
 		bool abnormalTab = false;
 		bool inkMarked = false;
-		m_searchDefectCnt = Inspect(m_inspect_param, &abnormalTab, &inkMarked);
+		int cntW = 0;
+		int cntB = 0;
+		m_searchDefectCnt = Inspect(m_inspect_param, &abnormalTab, &inkMarked, &cntW, &cntB);
 
 		if (abnormalTab == true) {
 			SetDlgItemTextW(IDC_ABNORMAL_TAB, TEXT("TRUE"));
@@ -1376,6 +1405,13 @@ void Ctali_ExamDlg::FolderInspect(CString strPath)
 			SetDlgItemTextW(IDC_INK_MARKED, TEXT("FALSE"));
 		}
 
+		CString strCntW;
+		strCntW.Format(TEXT("%d"), cntW);
+		CString strCntB;
+		strCntB.Format(TEXT("%d"), cntB);
+		SetDlgItemTextW(IDC_TAB_CNT_W, strCntW);
+		SetDlgItemTextW(IDC_TAB_CNT_B, strCntB);
+
 		CString strImgDst;
 		bool bNG = false;
 		
@@ -1383,7 +1419,11 @@ void Ctali_ExamDlg::FolderInspect(CString strPath)
 			strImgDst.Format(TEXT("%s\\%s"), strDestPathNG, vt_file_list[nCnt].m_strFileName);
 			bNG = true;
 		}
-		else if(abnormalTab == true || (abnormalTab == false && inkMarked == true)){//ÅÇºÒ·®:skip or Á¤»óÅÇ and À×Å©¸¶Å·:skip
+		//else if(abnormalTab == true || (abnormalTab == false && inkMarked == true)){//ÅÇºÒ·®:skip or Á¤»óÅÇ and À×Å©¸¶Å·:skip
+		//	strImgDst.Format(TEXT("%s\\%s"), strDestPathOK, vt_file_list[nCnt].m_strFileName);
+		//	bNG = false;
+		//}
+		else {
 			strImgDst.Format(TEXT("%s\\%s"), strDestPathOK, vt_file_list[nCnt].m_strFileName);
 			bNG = false;
 		}

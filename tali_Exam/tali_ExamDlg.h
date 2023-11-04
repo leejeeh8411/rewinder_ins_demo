@@ -155,7 +155,7 @@ private:
 	std::shared_ptr<CChain> m_pChain;
 	ImageProcess m_imgProcess;
 
-	int Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool* bInkMarked);
+	int Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool* bInkMarked, int* _cntW, int* _cntB);
 	int m_searchDefectCnt = 0;
 
 	CString GetFolderPath();
