@@ -50,6 +50,10 @@ struct INSPECT_PARAM
 	int InkMarkCnt_W_Min;
 	int InkMarkCnt_W_Max;
 	int InkMarkCnt_B;
+	int SearchTabRoi_L;
+	int SearchTabRoi_R;
+	int SearchTabRoi_T;
+	int SearchTabRoi_B;
 	
 	INSPECT_PARAM()
 	{
@@ -66,6 +70,10 @@ struct INSPECT_PARAM
 		InkMarkCnt_W_Min = 0;
 		InkMarkCnt_W_Max = 0;
 		InkMarkCnt_B = 0;
+		SearchTabRoi_L = 0;
+		SearchTabRoi_R = 0;
+		SearchTabRoi_T = 0;
+		SearchTabRoi_B = 0;
 	}
 };
 
@@ -150,7 +158,7 @@ private:
 	int m_nPatLength = 100;
 	double m_dThScore = 0.95;
 
-	CRect funcTabRoi(std::shared_ptr<CChain> chain, unsigned char* pImg, int width, int height, int th, int* cntW, int* cntB);
+	CRect funcTabRoi(std::shared_ptr<CChain> chain, unsigned char* pImg, int width, int height, int th, int* cntW, int* cntB, CRect rtROI);
 
 	std::shared_ptr<CChain> m_pChain;
 	ImageProcess m_imgProcess;

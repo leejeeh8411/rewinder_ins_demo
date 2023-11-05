@@ -342,7 +342,7 @@ void Ctali_ExamDlg::OnBnClickedBtnLoad()
 }
 
 CRect Ctali_ExamDlg::funcTabRoi(std::shared_ptr<CChain> chain, unsigned char* pImg, int width, int height,
-	int th, int* _cntW, int* _cntB)
+	int th, int* _cntW, int* _cntB, CRect rtROI)
 {
 	unsigned char* pBinary = new unsigned char[width * height];
 
@@ -350,7 +350,7 @@ CRect Ctali_ExamDlg::funcTabRoi(std::shared_ptr<CChain> chain, unsigned char* pI
 	m_imgProcess.Binarization(pImg, pBinary, width, height, th, bWhite);
 
 	chain.get()->SetChainData(1, pBinary, 2, 2, 4, 100000, width, height);
-	int blobCnt = chain.get()->FastChain(0, 0, width, height);
+	int blobCnt = chain.get()->FastChain(rtROI.left, rtROI.top, rtROI.right, rtROI.bottom);
 
 	int maxIdx = 0;
 	int maxArea = 0;
@@ -363,6 +363,11 @@ CRect Ctali_ExamDlg::funcTabRoi(std::shared_ptr<CChain> chain, unsigned char* pI
 		}
 	}
 	CRect rt;
+
+	if (blobCnt < 1) {
+		return rt;
+	}
+	
 	rt.SetRect(
 		chain.get()->FindMinX(maxIdx),
 		chain.get()->FindMinY(maxIdx),
@@ -704,10 +709,17 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 	int width = m_imgDisplay_w.gGetWidth();
 	int height = m_imgDisplay_w.gGetHeight();
 
+	CRect rtSearchTabROI;
+	rtSearchTabROI.SetRect(
+		inspect_param.SearchTabRoi_L, 
+		inspect_param.SearchTabRoi_T, 
+		inspect_param.SearchTabRoi_R, 
+		inspect_param.SearchTabRoi_B
+	);
 
 	int cntW = 0;
 	int cntB = 0;
-	CRect rtTabROI = funcTabRoi(m_pChain, pImgW, width, height, th, &cntW, &cntB);
+	CRect rtSearchedTab = funcTabRoi(m_pChain, pImgW, width, height, th, &cntW, &cntB, rtSearchTabROI);
 
 	//정상탭 확인. 범위안에 있으면 정상탭
 	bool abNormalTab = false;
@@ -781,12 +793,12 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 	int skipYTabEdge = 40; //탭 위아래 라운드 지는 부분 바이너리에서 제외할 스킵 벨류
 						   //탭위
 	m_imgProcess.BinarizationEdgeRange(pImgW, pImgB,
-		width, 0, rtTabROI.top - skipYTabEdge,
+		width, 0, rtSearchedTab.top - skipYTabEdge,
 		thW, thB, edgePosTab, binaryRange, reverseBinaryTab, skipXSttTab);
 
 	//탭아래
 	m_imgProcess.BinarizationEdgeRange(pImgW, pImgB,
-		width, rtTabROI.bottom + skipYTabEdge, height,
+		width, rtSearchedTab.bottom + skipYTabEdge, height,
 		thW, thB, edgePosTab, binaryRange, reverseBinaryTab, skipXSttTab);
 
 	//트림
@@ -828,10 +840,12 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 	}
 
 	//draw
-	m_imgDisplay_w.gDrawRect(rtTabROI);
+	m_imgDisplay_w.gDrawRect(rtSearchedTab, RGB(255, 204, 0));
 
-	m_imgDisplay_w.gDrawRect(rtRoiLeft);
-	m_imgDisplay_w.gDrawRect(rtRoiRight);
+	m_imgDisplay_w.gDrawRect(rtRoiLeft, RGB(0, 255, 0));
+	m_imgDisplay_w.gDrawRect(rtRoiRight, RGB(0, 255, 0));
+	m_imgDisplay_w.gDrawRect(rtSearchTabROI, RGB(0, 0, 255));
+
 	m_imgDisplay_w.UpdateDisplay();
 	m_imgDisplay_b.UpdateDisplay();
 
@@ -1127,6 +1141,22 @@ void Ctali_ExamDlg::CreateParam()
 	ptr_param = _param.MakeParam(strGroupName_Inspect, key.c_str(), 100);
 	_param.SetParam(ptr_param);
 
+	key = "SearchTabRoi_L";
+	ptr_param = _param.MakeParam(strGroupName_ROI, key.c_str(), 0);
+	_param.SetParam(ptr_param);
+
+	key = "SearchTabRoi_R";
+	ptr_param = _param.MakeParam(strGroupName_ROI, key.c_str(), 14000);
+	_param.SetParam(ptr_param);
+
+	key = "SearchTabRoi_T";
+	ptr_param = _param.MakeParam(strGroupName_ROI, key.c_str(), 0);
+	_param.SetParam(ptr_param);
+
+	key = "SearchTabRoi_B";
+	ptr_param = _param.MakeParam(strGroupName_ROI, key.c_str(), 1536);
+	_param.SetParam(ptr_param);
+
 
 	string param_path = _param.GetParameterPath();
 	CFileFind fileFind;
@@ -1301,6 +1331,20 @@ void Ctali_ExamDlg::SetInspectParam(INSPECT_PARAM* param, gParameter* gParameter
 		if (ptr_param->first == "InkMarkCnt_B") {
 			param->InkMarkCnt_B = ptr_param->second.nValue;
 		}
+		if (ptr_param->first == "SearchTabRoi_L") {
+			param->SearchTabRoi_L = ptr_param->second.nValue;
+		}
+		if (ptr_param->first == "SearchTabRoi_R") {
+			param->SearchTabRoi_R = ptr_param->second.nValue;
+		}
+		if (ptr_param->first == "SearchTabRoi_T") {
+			param->SearchTabRoi_T = ptr_param->second.nValue;
+		}
+		if (ptr_param->first == "SearchTabRoi_B") {
+			param->SearchTabRoi_B = ptr_param->second.nValue;
+		}
+
+		
 	}
 }
 
