@@ -781,8 +781,8 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 	int thW = inspect_param.Inspect_TH_W;
 	int thB = inspect_param.Inspect_TH_B;
 	int binaryRange = inspect_param.Inspect_Range;
-	int skipXSttTab = 8;	//edge 근처 지저분해서 바이너리 시 skip
-	int skipXSttTrim = 8;
+	int skipXSttTab = 10;	//edge 근처 지저분해서 바이너리 시 skip
+	int skipXSttTrim = 10;
 	bool reverseBinaryTab = true;
 	bool reverseBinaryTrim = false;
 
@@ -1283,7 +1283,7 @@ void Ctali_ExamDlg::SyncPropertyToParam()
 				pParam->bValue = bData;
 			}
 			else if (pParam->nDataType == TYPE_INT) {
-				int nData = vars.iVal;
+				int nData = vars.lVal;
 				pParam->nValue = nData;
 			}
 			else if (pParam->nDataType == TYPE_DOUBLE) {
