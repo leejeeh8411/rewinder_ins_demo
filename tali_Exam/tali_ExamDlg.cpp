@@ -781,20 +781,39 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 	int thW = inspect_param.Inspect_TH_W;
 	int thB = inspect_param.Inspect_TH_B;
 	int binaryRange = inspect_param.Inspect_Range;
-	int skipXSttTab = 4;	//edge 근처 지저분해서 바이너리 시 skip
-	int skipXSttTrim = 10;
+	int skipXSttTab = 8;	//edge 근처 지저분해서 바이너리 시 skip
+	int skipXSttTrim = 8;
 	bool reverseBinaryTab = true;
 	bool reverseBinaryTrim = false;
 
 	//임시로 이미지 Dark 버퍼를 바이너리 이미지 버퍼로 사용
 	memset(pImgB, 0, sizeof(unsigned char) * width * height);
 
+	shared_ptr<int> pProfile(new int[width]);
+
 	//바이너리
-	int skipYTabEdge = 40; //탭 위아래 라운드 지는 부분 바이너리에서 제외할 스킵 벨류
-						   //탭위
+	int skipYTabEdge = 20; //탭 위아래 라운드 지는 부분 바이너리에서 제외할 스킵 벨류
+
+	int makeProfileMargin = 20;
+	CRect rtAreaProfile;
+	rtAreaProfile.SetRect(
+		rtSearchedTab.left - binaryRange - makeProfileMargin,
+		rtSearchedTab.top + skipYTabEdge,
+		rtSearchedTab.left + makeProfileMargin,
+		rtSearchedTab.bottom - skipYTabEdge
+	);
+	m_imgProcess.MakeProfileX(pImgW, pProfile.get(), width, height, rtAreaProfile, 2);
+
+	
+	//탭위
 	m_imgProcess.BinarizationEdgeRange(pImgW, pImgB,
 		width, 0, rtSearchedTab.top - skipYTabEdge,
 		thW, thB, edgePosTab, binaryRange, reverseBinaryTab, skipXSttTab);
+
+	//탭영역
+	m_imgProcess.BinarizationEdgeRangeThProfile(pImgW, pImgB,
+		width, rtSearchedTab.top + skipYTabEdge, rtSearchedTab.bottom - skipYTabEdge,
+		pProfile.get(), 20, 20, edgePosTab, binaryRange, reverseBinaryTab, skipXSttTab);
 
 	//탭아래
 	m_imgProcess.BinarizationEdgeRange(pImgW, pImgB,

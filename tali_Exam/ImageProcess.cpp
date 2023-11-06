@@ -129,3 +129,69 @@ void ImageProcess::BinarizationEdgeRange(unsigned char* pSrc, unsigned char* pDs
 		}
 	}
 }
+
+void ImageProcess::BinarizationEdgeRangeThProfile(unsigned char* pSrc, unsigned char* pDst,
+	int width, int sttY, int endY, int* profile, int thW, int thB, int* edge, int rangeX, bool reverseX, int skipStart)
+{
+	for (int y = sttY; y < endY; y++) {
+		if (reverseX == true) {
+			for (int x = edge[y] - rangeX; x < edge[y] - skipStart; x++) {
+				int val = *(pSrc + y * width + x);
+				int valProfile = profile[x];
+
+				if (val > valProfile + thW || val < valProfile - thB) {
+					*(pDst + y * width + x) = 0xff;
+				}
+				else {
+					*(pDst + y * width + x) = 0x00;
+				}
+			}
+		}
+		else {
+			for (int x = edge[y] + skipStart; x < edge[y] + rangeX; x++) {
+				int val = *(pSrc + y * width + x);
+				int valProfile = profile[x];
+
+				if (val > valProfile + thW || val < valProfile - thB) {
+					*(pDst + y * width + x) = 0xff;
+				}
+				else {
+					*(pDst + y * width + x) = 0x00;
+				}
+			}
+		}
+	}
+}
+
+
+void ImageProcess::MakeProfileX(unsigned char* pSrc, int* pProfile, int width, int height, CRect rtArea, int skip)
+{
+
+	if (rtArea.left < 0) {
+		rtArea.left = 0;
+	}
+	if (rtArea.right > width) {
+		rtArea.right = width;
+	}
+
+	if (rtArea.top < 0) {
+		rtArea.top = 0;
+	}
+	if (rtArea.bottom > height) {
+		rtArea.bottom = height;
+	}
+
+	for (int x = rtArea.left; x < rtArea.right; x++) {
+		int sum = 0;
+		int cnt = 0;
+		for (int y = rtArea.top; y < rtArea.bottom; y += skip) {
+			sum += *(pSrc + y * width + x);
+			cnt++;
+		}
+		if (cnt < 1) {
+			cnt = 1;
+		}
+		sum /= cnt;
+		pProfile[x] = sum;
+	}
+}
