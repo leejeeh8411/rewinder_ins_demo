@@ -104,6 +104,10 @@ void ImageProcess::BinarizationEdgeRange(unsigned char* pSrc, unsigned char* pDs
 {
 	for (int y = sttY; y < endY; y++) {
 		if (reverseX == true) {
+			//exception
+			if (edge[y] - rangeX < 0 || width < edge[y] - skipStart) {
+				break;
+			}
 			for (int x = edge[y] - rangeX; x < edge[y] - skipStart; x++) {
 				int val = *(pSrc + y * width + x);
 
@@ -116,6 +120,10 @@ void ImageProcess::BinarizationEdgeRange(unsigned char* pSrc, unsigned char* pDs
 			}
 		}
 		else {
+			//exception
+			if (edge[y] + skipStart < 0 || width < edge[y] + rangeX) {
+				break;
+			}
 			for (int x = edge[y] + skipStart; x < edge[y] + rangeX; x++) {
 				int val = *(pSrc + y * width + x);
 
@@ -135,6 +143,10 @@ void ImageProcess::BinarizationEdgeRangeThProfile(unsigned char* pSrc, unsigned 
 {
 	for (int y = sttY; y < endY; y++) {
 		if (reverseX == true) {
+			//exception
+			if (edge[y] - rangeX < 0 || width < edge[y] - skipStart) {
+				break;
+			}
 			for (int x = edge[y] - rangeX; x < edge[y] - skipStart; x++) {
 				int val = *(pSrc + y * width + x);
 				int valProfile = profile[x];
@@ -148,6 +160,10 @@ void ImageProcess::BinarizationEdgeRangeThProfile(unsigned char* pSrc, unsigned 
 			}
 		}
 		else {
+			//exception
+			if (edge[y] + skipStart < 0 || width < edge[y] + rangeX) {
+				break;
+			}
 			for (int x = edge[y] + skipStart; x < edge[y] + rangeX; x++) {
 				int val = *(pSrc + y * width + x);
 				int valProfile = profile[x];

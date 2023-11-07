@@ -177,6 +177,7 @@ private:
 	std::string AddQMark_s(std::string  str);
 	CString AddQMark(int str);
 	CString AddQMark(float str);
+	CRect InvalidRect(CRect rtArea, int width, int height);
 
 public:
 	gImage m_imgDisplay;

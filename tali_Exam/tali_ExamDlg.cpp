@@ -871,6 +871,27 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 	return retDefectCnt;
 }
 
+CRect Ctali_ExamDlg::InvalidRect(CRect rtArea, int width, int height)
+{
+	CRect retRt;
+
+	retRt = rtArea;
+
+	if (retRt.left < 0) {
+		retRt.left = 0;
+	}
+	if (retRt.right > width) {
+		retRt.right = width;
+	}
+	if (retRt.top < 0) {
+		retRt.top = 0;
+	}
+	if (retRt.bottom > height) {
+		retRt.bottom = height;
+	}
+
+	return retRt;
+}
 
 vector<int> Ctali_ExamDlg::FindDetailEdge(BYTE* fmBright, BYTE* fmDark, int nWidth, int  nHeight,
 	CRect rtIns, int th, int dir, int diffCondition, bool research)
@@ -878,18 +899,9 @@ vector<int> Ctali_ExamDlg::FindDetailEdge(BYTE* fmBright, BYTE* fmDark, int nWid
 	int nSearchOffset = 10;
 
 	//예외처리
-	if (rtIns.left < 0) {
-		rtIns.left = 0;
-	}
-	if (rtIns.right > nWidth) {
-		rtIns.right = nWidth;
-	}
-	if (rtIns.top < 0) {
-		rtIns.top = 0;
-	}
-	if (rtIns.bottom > nHeight) {
-		rtIns.bottom = nHeight;
-	}
+	rtIns = InvalidRect(rtIns, nWidth, nHeight);
+
+	
 
 	std::vector<int> vt_edge;
 	vt_edge.clear();
