@@ -349,7 +349,7 @@ CRect Ctali_ExamDlg::funcTabRoi(std::shared_ptr<CChain> chain, unsigned char* pI
 	bool bWhite = true;
 	m_imgProcess.Binarization(pImg, pBinary, width, height, th, bWhite);
 
-	chain.get()->SetChainData(1, pBinary, 2, 2, 4, 100000, width, height);
+	chain.get()->SetChainData(1, pBinary, 2, 2, 200, 100000, width, height);
 	int blobCnt = chain.get()->FastChain(rtROI.left, rtROI.top, rtROI.right, rtROI.bottom);
 
 	int maxIdx = 0;
@@ -776,13 +776,11 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 		aveTrimEdge = sum / vtEdgeCoatTrim.size();
 	}
 
-	int* edgePosTab = &vtEdgeCoatTab[0];
-	int* edgePosTrim = &vtEdgeCoatTrim[0];
+	
 	int thW = inspect_param.Inspect_TH_W;
 	int thB = inspect_param.Inspect_TH_B;
 	int binaryRange = inspect_param.Inspect_Range;
-	int skipXSttTab = 10;	//edge 근처 지저분해서 바이너리 시 skip
-	int skipXSttTrim = 10;
+	
 	bool reverseBinaryTab = true;
 	bool reverseBinaryTrim = false;
 
@@ -792,7 +790,7 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 	shared_ptr<int> pProfile(new int[width]);
 
 	//바이너리
-	int skipYTabEdge = 20; //탭 위아래 라운드 지는 부분 바이너리에서 제외할 스킵 벨류
+	int skipYTabEdge = 40; //탭 위아래 라운드 지는 부분 바이너리에서 제외할 스킵 벨류
 
 	int makeProfileMargin = 20;
 	CRect rtAreaProfile;
@@ -804,7 +802,69 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 	);
 	m_imgProcess.MakeProfileX(pImgW, pProfile.get(), width, height, rtAreaProfile, 2);
 
+
+	shared_ptr<unsigned char> pImePre(new unsigned char[width * height]);
+
+	CopyImageROI(pImgW, pImePre.get(), width, height, width, height, rtRoiLeft);
+	CopyImageROI(pImgW, pImePre.get(), width, height, width, height, rtRoiRight);
+
+	//가우시안 필터
+	int nKernelSize = 3;
+	double* pDKernel = new double[nKernelSize*nKernelSize];
+	//가우시안 필터
+	generateGaussKernel(pDKernel, nKernelSize);
+
+	Gaussian(pImgW, pImePre.get(), width, height, width, rtRoiRight, pDKernel, nKernelSize, nKernelSize);
+	Gaussian(pImgW, pImePre.get(), width, height, width, rtRoiLeft, pDKernel, nKernelSize, nKernelSize);
+
+	int* pSobelKernelX = new int[9];
+	int* pSobelKernelY = new int[9];
+	{
+		pSobelKernelX[0] = -1; pSobelKernelY[0] = 1;
+		pSobelKernelX[1] = 0; pSobelKernelY[1] = 2;
+		pSobelKernelX[2] = 1; pSobelKernelY[2] = 1;
+
+		pSobelKernelX[3] = -2; pSobelKernelY[3] = 0;
+		pSobelKernelX[4] = 0; pSobelKernelY[4] = 0;
+		pSobelKernelX[5] = 2; pSobelKernelY[5] = 0;
+
+		pSobelKernelX[6] = -1; pSobelKernelY[6] = -1;
+		pSobelKernelX[7] = 0; pSobelKernelY[7] = -2;
+		pSobelKernelX[8] = 1; pSobelKernelY[8] = -1;
+	}
+
+
+	SobelXY(pImePre.get(), pImgB, width, height, width, rtRoiRight, pSobelKernelX, pSobelKernelY, 3, 3);
+	SobelXY(pImePre.get(), pImgB, width, height, width, rtRoiLeft, pSobelKernelX, pSobelKernelY, 3, 3);
+
+	delete[] pDKernel;
+	delete[] pSobelKernelX;
+	delete[] pSobelKernelY;
+
+	vector<int> vtEdgeCoatTab_s;
+	vector<int> vtEdgeCoatTrim_s;
+
+
+	//vtEdgeCoatTab_s = FindDetailEdgePeakPos(pImgB, pImgB, width, height, rtRoiRight, SEARCH_DIR::SEARCH_DIR_RtL);
+
+	//vtEdgeCoatTrim_s = FindDetailEdgePeakPos(pImgB, pImgB, width, height, rtRoiLeft, SEARCH_DIR::SEARCH_DIR_LtR);
+
+
+	vtEdgeCoatTab_s = FindDetailEdge(pImgB, pImgB, width, height, rtRoiRight, edgeThCoat, SEARCH_DIR::SEARCH_DIR_LtR, BRIGHT_DIFF_CONDITION::BRIGHT_DIFF_CONDITION_BtW, reserch);
+
+	vtEdgeCoatTrim_s = FindDetailEdge(pImgW, pImgB, width, height, rtRoiLeft, edgeThCoat, SEARCH_DIR::SEARCH_DIR_RtL, BRIGHT_DIFF_CONDITION::BRIGHT_DIFF_CONDITION_BtW, reserch);
 	
+	memset(pImgB, 0, sizeof(unsigned char) * width * height);
+
+	/*int* edgePosTab = &vtEdgeCoatTab[0];
+	int* edgePosTrim = &vtEdgeCoatTrim[0];*/
+
+	int* edgePosTab = &vtEdgeCoatTab_s[0];
+	int* edgePosTrim = &vtEdgeCoatTrim_s[0];
+
+	int skipXSttTab = 8;	//edge 근처 지저분해서 바이너리 시 skip
+	int skipXSttTrim = 8;
+
 	//탭위
 	m_imgProcess.BinarizationEdgeRange(pImgW, pImgB,
 		width, 0, rtSearchedTab.top - skipYTabEdge,
@@ -871,6 +931,38 @@ int Ctali_ExamDlg::Inspect(INSPECT_PARAM inspect_param, bool* bAbNormalTab, bool
 	return retDefectCnt;
 }
 
+//rtSrc : 해당 roi center pos 을 기준으로 원본영상에서 dst(width * height) 만큼 대상위치로 copy
+void Ctali_ExamDlg::CopyImageROI(unsigned char* fmSrc, unsigned char* fmDst, int widthSrc, int heightSrc, int widthDst, int heightDst, CRect rtSrc)
+{
+	CRect rtSrcROI;
+	rtSrcROI.SetRect(rtSrc.CenterPoint().x, rtSrc.CenterPoint().y, rtSrc.CenterPoint().x, rtSrc.CenterPoint().y);
+	rtSrcROI.InflateRect(widthSrc * 0.5, widthDst * 0.5);
+
+	if (rtSrcROI.left < 0) {
+		rtSrcROI.left = 0;
+		rtSrcROI.right = widthDst;
+	}
+	if (rtSrcROI.right > widthSrc) {
+		rtSrcROI.right = widthSrc;
+		rtSrcROI.left = widthSrc - widthDst;
+	}
+	if (rtSrcROI.top < 0) {
+		rtSrcROI.top = 0;
+		rtSrcROI.bottom = heightDst;
+	}
+	if (rtSrcROI.bottom > heightSrc) {
+		rtSrcROI.bottom = heightSrc;
+		rtSrcROI.top = heightSrc - heightDst;
+	}
+
+	int idxDstY = 0;
+	for (int y = rtSrcROI.top; y < rtSrcROI.bottom; y++) {
+		memcpy(fmDst + idxDstY * widthDst, fmSrc + y * widthSrc + rtSrcROI.left, sizeof(unsigned char) * widthDst);
+		idxDstY++;
+	}
+}
+
+
 CRect Ctali_ExamDlg::InvalidRect(CRect rtArea, int width, int height)
 {
 	CRect retRt;
@@ -893,6 +985,161 @@ CRect Ctali_ExamDlg::InvalidRect(CRect rtArea, int width, int height)
 	return retRt;
 }
 
+
+void Ctali_ExamDlg::generateGaussKernel(double* dKernel, int diameter)
+{
+	float sigma = diameter / 4.0f;
+	//std::shared_ptr<float[]> kernel(new float[diameter * diameter]);
+	int mean = diameter / 2;
+	float sum = 0.0; // For accumulating the kernel values
+
+	for (int x = 0; x < diameter; ++x) {
+		for (int y = 0; y < diameter; ++y) {
+			dKernel[y * diameter + x] = (float)(exp(-0.5 * (pow((x - mean) / sigma, 2.0) + pow((y - mean) / sigma, 2.0))) / (2 * PI * sigma * sigma));
+
+			// Accumulate the kernel values
+			sum += dKernel[y * diameter + x];
+		}
+	}
+
+	// Normalize the kernel
+	for (int x = 0; x < diameter; ++x)
+		for (int y = 0; y < diameter; ++y)
+			dKernel[y * diameter + x] /= sum;
+
+	//return kernel;
+}
+
+int Ctali_ExamDlg::Gaussian(LPBYTE fmSour, LPBYTE fmDest, int width, int height, int pitch, CRect rtROI, double* pKernel, int nKernelSizeX, int nKernelSizeY)
+{
+	// 변수 체크 
+	if (width>pitch) return 0;
+
+	int i, j, k, l;
+	int nOrgX, nOrgY;
+	int Kernel_ALLZero = 0;
+	int MaxValue;
+
+	nOrgX = (int)(nKernelSizeX / 2.0 - 0.5);
+	nOrgY = (int)(nKernelSizeY / 2.0 - 0.5);
+
+	for (k = 0; k<nKernelSizeY; k++)
+		for (l = 0; l<nKernelSizeX; l++)
+			if (*(pKernel + nKernelSizeX*k + l) > 0) {
+				Kernel_ALLZero = 1;
+			}
+
+	if (Kernel_ALLZero == 0) // 모든 kernel의 값이 ZERO이면 
+	{
+		for (i = rtROI.top; i<rtROI.bottom - nKernelSizeY; i++)
+			for (j = rtROI.left; j<rtROI.right - nKernelSizeX; j++)
+			{
+				MaxValue = 0;
+				for (k = 0; k<nKernelSizeY; k++)
+					for (l = 0; l<nKernelSizeX; l++)
+						if (*(fmSour + (i + k)*pitch + j + l) > MaxValue)
+						{
+							MaxValue = *(fmSour + (i + k)*pitch + j + l);
+						}
+
+				*(fmDest + (i + nOrgY)*pitch + j + nOrgX) = MaxValue;
+			}
+	}
+	else  //kernel이 어떤 값을 가지고 있을때
+	{
+		for (int y = rtROI.top; y < rtROI.bottom; y++) {
+			for (int x = rtROI.left; x < rtROI.right; x++) {
+				if (y < 2 || y > height - 3) {
+					*(fmDest + y * pitch + x) = *(fmSour + y * pitch + x);
+				}
+				if (x < 2 || x > width - 3) {
+					*(fmDest + y * pitch + x) = *(fmSour + y * pitch + x);
+				}
+			}
+		}
+
+
+		for (i = rtROI.top; i < rtROI.bottom - nKernelSizeY; i++) {
+			for (j = rtROI.left; j < rtROI.right - nKernelSizeX; j++) {
+				int sum = 0;
+				for (k = 0; k < nKernelSizeY; k++)
+					for (l = 0; l < nKernelSizeX; l++)
+						sum = sum + *(fmSour + (i + k)*pitch + j + l) * *(pKernel + nKernelSizeX*k + l);
+
+				if (sum > 255) sum = 255;
+				*(fmDest + (i + nOrgX)*pitch + (j + nOrgY)) = sum;
+			}
+		}
+
+	}
+
+	return 1;
+}
+
+
+
+int Ctali_ExamDlg::SobelXY(LPBYTE fmSour, LPBYTE fmDest, int width, int height, int nPitch, CRect rtROI, int* pKernelX, int* pKernelY, int nKernelSizeX, int nKernelSizeY)
+{
+	// 변수 체크 
+	if (width>nPitch) return 0;
+
+	int i, j, k, l;
+	int nOrgX, nOrgY;
+	int Kernel_ALLZero = 0;
+	int MaxValue;
+
+	nOrgX = (int)(nKernelSizeX / 2.0 - 0.5);
+	nOrgY = (int)(nKernelSizeY / 2.0 - 0.5);
+
+	for (k = 0; k<nKernelSizeY; k++)
+		for (l = 0; l<nKernelSizeX; l++)
+			if (*(pKernelX + nKernelSizeX*k + l) > 0) Kernel_ALLZero = 1;
+
+	if (Kernel_ALLZero == 0) // 모든 kernel의 값이 ZERO이면 
+	{
+		for (i = rtROI.top; i<rtROI.bottom - nKernelSizeY - 1; i++)
+			for (j = rtROI.left; j<rtROI.right - nKernelSizeX - 1; j++)
+			{
+				MaxValue = 0;
+				for (k = 0; k<nKernelSizeY; k++)
+					for (l = 0; l<nKernelSizeX; l++)
+						if (*(fmSour + (i + k)*nPitch + j + l) > MaxValue)
+						{
+							MaxValue = *(fmSour + (i + k)*nPitch + j + l);
+						}
+
+				*(fmDest + (i + nOrgY)*nPitch + j + nOrgX) = MaxValue;
+			}
+	}
+	else  //kernel이 어떤 값을 가지고 있을때
+	{
+		for (i = rtROI.top; i < rtROI.bottom - nKernelSizeY; i++)
+			for (j = rtROI.left; j < rtROI.right - nKernelSizeX; j++)
+			{
+				int sumX = 0;
+				int sumY = 0;
+				for (k = 0; k < nKernelSizeY; k++) {
+					for (l = 0; l < nKernelSizeX; l++) {
+						sumX = sumX + *(fmSour + (i + k)*nPitch + j + l) * *(pKernelX + nKernelSizeX*k + l);
+						sumY = sumY + *(fmSour + (i + k)*nPitch + j + l) * *(pKernelY + nKernelSizeX*k + l);
+					}
+				}
+
+				int sum = sqrt((sumX * sumX) + (sumY * sumY));
+
+				if (sum <= 0) {
+					sum = abs(sum);
+					//sum = 0;
+				}
+				else if (sum >= 255) sum = 255;
+				*(fmDest + (i + nOrgX)*nPitch + (j + nOrgY)) = sum;
+			}
+	}
+
+	return 1;
+}
+
+
 vector<int> Ctali_ExamDlg::FindDetailEdge(BYTE* fmBright, BYTE* fmDark, int nWidth, int  nHeight,
 	CRect rtIns, int th, int dir, int diffCondition, bool research)
 {
@@ -900,8 +1147,6 @@ vector<int> Ctali_ExamDlg::FindDetailEdge(BYTE* fmBright, BYTE* fmDark, int nWid
 
 	//예외처리
 	rtIns = InvalidRect(rtIns, nWidth, nHeight);
-
-	
 
 	std::vector<int> vt_edge;
 	vt_edge.clear();
@@ -1033,6 +1278,114 @@ vector<int> Ctali_ExamDlg::FindDetailEdge(BYTE* fmBright, BYTE* fmDark, int nWid
 				}
 				vt_edge.emplace_back(peak_pos);
 			}
+		}
+	}
+
+	return vt_edge;
+}
+
+
+vector<int> Ctali_ExamDlg::FindDetailEdgePeakPos(BYTE* fmBright, BYTE* fmDark, int nWidth, int nHeight, CRect rtIns, int dir)
+{
+	int nSearchOffset = 10;
+
+	//예외처리
+	rtIns = InvalidRect(rtIns, nWidth, nHeight);
+
+	std::vector<int> vt_edge;
+	vt_edge.clear();
+	int before_edge = 0;
+
+	//찾은다음 diff offset 줄여서 좀 더 정확하게 찾음
+	int research_range = 10;
+	int research_offset = 5;
+
+	for (int y = rtIns.top; y < rtIns.bottom; y++) {
+
+		//y 2줄 평균밝기 보느라 맨 끝줄은 그냥 이전 edge로 채운다
+		if (y + 1 >= rtIns.bottom) {
+			vt_edge.emplace_back(before_edge);
+			continue;
+		}
+
+		int maxDiff = 0;
+		int maxDiffPos = 0;
+		if (dir == SEARCH_DIR::SEARCH_DIR_LtR) {
+			for (int x = rtIns.left; x < rtIns.right - nSearchOffset; x++) {
+
+				int nVal_left = *(fmBright + (y + 0) * nWidth + x) + *(fmBright + (y + 1) * nWidth + x);
+				nVal_left /= 2;
+
+				int nVal_right = *(fmBright + (y + 0) * nWidth + (x + nSearchOffset)) + *(fmBright + (y + 1) * nWidth + (x + nSearchOffset));
+				nVal_right /= 2;
+
+
+				int diff = abs(nVal_left - nVal_right);
+
+				if (diff > maxDiff) {
+					maxDiff = diff;
+					maxDiffPos = x + (nSearchOffset * 0.5);
+				}
+			}
+			
+			int peak_val = 0;
+			int peak_pos = 0;
+			for (int x = maxDiffPos - research_range; x < maxDiffPos + research_range; x++) {
+
+				int nVal_left = *(fmBright + (y + 0) * nWidth + x) + *(fmBright + (y + 1) * nWidth + x);
+				nVal_left /= 2;
+
+				int nVal_right = *(fmBright + (y + 0) * nWidth + (x + research_offset)) + *(fmBright + (y + 1) * nWidth + (x + research_offset));
+				nVal_right /= 2;
+
+				int diff = abs(nVal_left - nVal_right);
+				if (peak_val < diff) {
+					peak_val = diff;
+					peak_pos = x + (research_offset * 0.5);
+				}
+			}
+				
+			vt_edge.emplace_back(peak_pos);
+			before_edge = peak_pos;
+		}
+		else if (dir == SEARCH_DIR::SEARCH_DIR_RtL) {		//DIR_RtL
+			bool searched = false;
+			for (int x = rtIns.right - nSearchOffset - 1; x >= rtIns.left; x--) {
+
+				int nVal_left = *(fmBright + (y + 0) * nWidth + x) + *(fmBright + (y + 1) * nWidth + x);
+				nVal_left /= 2;
+
+				int nVal_right = *(fmBright + (y + 0) * nWidth + (x + nSearchOffset)) + *(fmBright + (y + 1) * nWidth + (x + nSearchOffset));
+				nVal_right /= 2;
+
+
+				int diff = abs(nVal_left - nVal_right);
+
+				if (diff > maxDiff) {
+					maxDiff = diff;
+					maxDiffPos = x + (nSearchOffset * 0.5);
+				}
+			}
+
+			int peak_val = 0;
+			int peak_pos = 0;
+			for (int x = maxDiffPos - research_range; x < maxDiffPos + research_range; x++) {
+
+				int nVal_left = *(fmBright + (y + 0) * nWidth + x) + *(fmBright + (y + 1) * nWidth + x);
+				nVal_left /= 2;
+
+				int nVal_right = *(fmBright + (y + 0) * nWidth + (x + research_offset)) + *(fmBright + (y + 1) * nWidth + (x + research_offset));
+				nVal_right /= 2;
+
+
+				int diff = abs(nVal_left - nVal_right);
+				if (peak_val < diff) {
+					peak_val = diff;
+					peak_pos = x + (research_offset * 0.5);
+				}
+			}
+			vt_edge.emplace_back(peak_pos);
+			before_edge = peak_pos;
 		}
 	}
 

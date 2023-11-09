@@ -144,9 +144,9 @@ protected:
 	DECLARE_MESSAGE_MAP()
 	bool DivideFullImage(unsigned char* pSrc, unsigned char* pDstW, unsigned char* pDstD, int width, int height);
 	PIXEL_VAL GetFirstLinePixelVal(unsigned char* pSrc, int width, const CRect& rtRoi);
-	vector<int> FindDetailEdge(BYTE* fmBright, BYTE* fmDark, int nWidth, int  nHeight,
-		CRect rtIns, int th, int dir, int diffCondition, bool research);
+	vector<int> FindDetailEdge(BYTE* fmBright, BYTE* fmDark, int nWidth, int  nHeight, CRect rtIns, int th, int dir, int diffCondition, bool research);
 
+	vector<int> FindDetailEdgePeakPos(BYTE* fmBright, BYTE* fmDark, int nWidth, int nHeight, CRect rtIns, int dir);
 private:
 	void setLogger();
 	void setDisplay();
@@ -178,6 +178,11 @@ private:
 	CString AddQMark(int str);
 	CString AddQMark(float str);
 	CRect InvalidRect(CRect rtArea, int width, int height);
+
+	void generateGaussKernel(double* dKernel, int diameter);
+	int Gaussian(LPBYTE fmSour, LPBYTE fmDest, int width, int height, int pitch, CRect rtROI, double* pKernel, int nKernelSizeX, int nKernelSizeY);
+	int SobelXY(LPBYTE fmSour, LPBYTE fmDest, int width, int height, int nPitch, CRect rtROI, int* pKernelX, int* pKernelY, int nKernelSizeX, int nKernelSizeY);
+	void CopyImageROI(unsigned char* fmSrc, unsigned char* fmDst, int widthSrc, int heightSrc, int widthDst, int heightDst, CRect rtSrc);
 
 public:
 	gImage m_imgDisplay;
